@@ -22,3 +22,27 @@ Techniques
 * Creating sales trend charts (Yearly & Monthly)
 * Identifying Top 5 Categories
 * Dashboard layout design using a consistent color palette
+
+### Dataset Overview
+1. Description
+   The dataset contains retail sales transactions from a store serving both online and walk-in customers. Each record represents a single transaction and includes details about the product purchased, its category, price, quantity, total spent, payment method, and transaction date. This dataset provides a complete view of sales activities and customer behavior.
+   
+2. Size
+* Rows: 12,575
+* Columns: 11
+
+3. Columns
+| Column Name	   | Description|
+|----------------|------------|
+| Transaction ID |	Unique identifier for each transaction|
+| Customer ID	   | Unique identifier for each customer |
+| Category	     | Product category (e.g., Beverages, Food) |
+| Item	         | Specific item purchased                 |
+| Price Per Unit | Price of one unit of the item          |
+| Quantity	     | Number of units purchased           |
+| Total Spent	   | Total amount spent (Price × Quantity)   |
+| Payment Method | Mode of payment (e.g., Cash, Credit Card) |
+| Location	     | Online or Walk-in purchase     |
+| Transaction Date|	Date of the transaction  |
+| Discount Applied|	Whether a discount was applied (True/False) |
+   
