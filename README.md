@@ -32,17 +32,35 @@ Techniques
 * Columns: 11
 
 3. Columns
-| Column Name	   | Description|
-|----------------|------------|
-| Transaction ID |	Unique identifier for each transaction|
-| Customer ID	   | Unique identifier for each customer |
-| Category	     | Product category (e.g., Beverages, Food) |
-| Item	         | Specific item purchased                 |
-| Price Per Unit | Price of one unit of the item          |
-| Quantity	     | Number of units purchased           |
-| Total Spent	   | Total amount spent (Price × Quantity)   |
-| Payment Method | Mode of payment (e.g., Cash, Credit Card) |
-| Location	     | Online or Walk-in purchase     |
-| Transaction Date|	Date of the transaction  |
-| Discount Applied|	Whether a discount was applied (True/False) |
    
+| Column Name	    | Description|
+|------------------|------------|
+| Transaction ID   |	Unique identifier for each transaction|
+| Customer ID	    | Unique identifier for each customer |
+| Category	       | Product category (e.g., Beverages, Food) |
+| Item	          | Specific item purchased                 |
+| Price Per Unit   | Price of one unit of the item          |
+| Quantity	       | Number of units purchased           |
+| Total Spent	    | Total amount spent (Price × Quantity)   |
+| Payment Method   | Mode of payment (e.g., Cash, Credit Card) |
+| Location	       | Online or Walk-in purchase     |
+| Transaction Date |	Date of the transaction  |
+| Discount Applied |	Whether a discount was applied (True/False) |
+
+4. Sample Preview
+   
+| Transaction ID |	Customer ID	| Category	| Item	| Price Per Unit | Quantity	| Total Spent	| Payment Method	| Location	| Transaction Date |	Discount Applied |
+|----------------|---------------|-----------|--------|----------------|------------|--------------|-----------------|-----------|------------------|-----------------|
+| TXN_6867343	  | CUST_09	      | Patisserie|	Item_10_PAT | 	18.5	| 10	| 185	| Digital Wallet | 	Online	| ########	| TRUE |
+| TXN_3731986	  | CUST_22	      | Milk Products |	Item_17_MILK	| 29	| 9	| 261 |	Digital Wallet | Online	| ########	| TRUE |
+| TXN_9303719	 | CUST_02	| Butchers	| Item_12_BUT	| 21.5	| 2	| 43	| Credit Card	| Online	 | ########	| FALSE |
+
+5. Missing Values
+   
+Some columns contain missing data that will be handled during cleaning:
+
+* Item – 1,213 missing
+* Price Per Unit – 609 missing
+* Quantity – 604 missing
+* Total Spent – 604 missing
+* Discount Applied – 4,199 missing
