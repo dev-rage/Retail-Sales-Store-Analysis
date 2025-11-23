@@ -10,15 +10,15 @@ This project demonstrates my ability to clean, analyze, and visualize real-world
 
 ### Tools & Techniques Used
 Tools
-*Microsoft Excel
-*Power Query
-*PivotTables & PivotCharts
-*Slicers
+* Microsoft Excel
+* Power Query
+* PivotTables & PivotCharts
+* Slicers
 
 Techniques
-*Data cleaning using Power Query (removing blanks to create Table1_1)
-*Formatting and standardizing dataset columns
-*Building KPIs (Total Revenue, Total Transactions, AOV)
-*Creating sales trend charts (Yearly & Monthly)
-*Identifying Top 5 Categories
-*Dashboard layout design using a consistent color palette
+* Data cleaning using Power Query (removing blanks to create Table1_1)
+* Formatting and standardizing dataset columns
+* Building KPIs (Total Revenue, Total Transactions, AOV)
+* Creating sales trend charts (Yearly & Monthly)
+* Identifying Top 5 Categories
+* Dashboard layout design using a consistent color palette
