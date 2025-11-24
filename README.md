@@ -64,3 +64,105 @@ Some columns contain missing data that will be handled during cleaning:
 * Quantity – 604 missing
 * Total Spent – 604 missing
 * Discount Applied – 4,199 missing
+
+### Data cleaning
+
+* Imported the raw sales dataset into Excel for initial review.
+* Removed rows with missing Price Per Unit and Quantity, since these prevented accurate calculation of Total Spent.
+* Computed Total Spent using Price × Quantity after validating required fields.
+* Extracted Month and Year from the Transaction Date to support trend and seasonal analysis.
+* Loaded the dataset into Power Query for deeper cleaning.
+* Filtered out blank Item values only for the Top Items analysis — since blanks distort item-level ranking.
+* Did not filter blanks for Top Categories, because blank items do not change how categories aggregate.
+* Loaded the cleaned dataset into Excel as Table1_1 for use in all pivot tables and dashboard visuals.
+* Kept the original dataset (Table1) only for KPI totals where blank-item transactions still contribute to overall revenue.
+
+### Exploratory Data Analysis
+
+The Exploratory Data Analysis focused on understanding sales patterns, category performance, item trends, and the structure of missing data within the dataset. After cleaning, two versions of the dataset were used to ensure insight accuracy:
+
+* Table1: Full dataset (including blanks) — used for KPIs and total sales calculations
+* Table1_1: Cleaned dataset (blanks in Price, Quantity, Total Spent, and Item removed where necessary) — used for category and item-level analysis
+
+### 1. Sales Trends Over Time
+
+Using extracted Month and Year columns, a time-series view was generated to understand overall performance trends.
+
+Findings:
+* Sales increased steadily from 2022 → 2024, indicating consistent business growth.
+* A decline in 2025 occurs due to incomplete-year data.
+* Monthly analysis helped reveal fluctuations and potential seasonality.
+
+### 2. Category Performance
+
+Category-level insights were generated using Table1 to ensure accuracy.
+
+Key observations:
+* Butchers, Electronics, and Food emerged as top-performing categories.
+* Categories with missing items were excluded deliberately to avoid skewed results.
+* These findings highlight where revenue is concentrated.
+
+### 3. Item-Level Insights
+
+Item performance was analyzed only from clean records to avoid incorrect assumptions.
+
+Key notes:
+* Rows with missing Item values were excluded for ranking visuals.
+* A Top Items chart was created using only complete data.
+* Some blanks could not be reliably inferred because different items shared similar price points.
+This ensured all item-level insights remained valid
+
+### 4. Discounts Overview
+
+The Discount Applied field contained many blanks, which were cleaned by replacing empty values with FALSE.
+
+Findings:
+* The majority of purchases were not discounted.
+* Discount values were used only to understand distribution, not to compare spending behavior.
+
+### 5. Missing Data Patterns
+
+Significant missing values were identified across:
+* Item
+* Price Per Unit
+* Quantity
+* Total Spent
+* Discount Applied
+
+Actions taken:
+* Completely unusable rows (missing both Price per Unit & Quantity) were removed as they were analytically unusable.
+* Blanks in Item were filtered out only in Table1_1.
+* Discount blanks were set to FALSE for consistency.
+This produced a cleaner dataset suitable for accurate analysis and visualization.
+
+### 6. Dual-Dataset Strategy
+
+Two structured datasets were intentionally maintained to ensure clean analysis without compromising KPI accuracy:
+
+Table1 (Full Dataset)
+
+Used for all high-level metrics and visuals where blanks must be included for correct totals:
+
+* Total Revenue
+* Transaction Count
+* Average Order Value (AOV)
+* PivotTables for:
+   * Sales by Payment Method
+   * Sales Performance Over Time (Year & Month)
+   * Top Categories
+This ensured that KPIs reflect the complete business activity, even when some fields had missing item-level details.
+
+Table1_1 (Cleaned Dataset)
+
+Used exclusively for insights requiring complete item information, specifically:
+
+* Top Items Analysis
+
+Blank or incomplete items were removed so that the ranking of top-performing items would be reliable and not influenced by missing or ambiguous values.
+
+Why This Approach Was Necessary
+
+Because the dataset contained missing values in key fields (Item, Price, Quantity, Total Spent), separating the data ensured:
+* KPIs and time-based trends remained accurate.
+* Item-level insights remained clean and trustworthy.
+* No visual or metric was distorted by incomplete records.
