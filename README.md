@@ -166,3 +166,109 @@ Because the dataset contained missing values in key fields (Item, Price, Quantit
 * KPIs and time-based trends remained accurate.
 * Item-level insights remained clean and trustworthy.
 * No visual or metric was distorted by incomplete records.
+
+### Excel Dashboard
+The Excel dashboard includes the following visuals.
+* Sales performance over Time (Year & Month)
+* Top 5 Categories
+* Top 7 Items
+* Sales Performance: Discount vs No Discount
+* Sales by Payment Method
+
+<img width="1112" height="427" alt="Retail store dashboard" src="https://github.com/user-attachments/assets/368148c9-b812-4a47-865d-236d90ff5371" />
+
+### Key Insights
+1. Overall Sales Performance
+* Sales increased steadily from 2022 to 2024, reflecting strong year-over-year business growth.
+* A drop in 2025 is visible because the dataset contains partial-year data, not an actual decline.
+* Monthly sales patterns show fluctuations and potential seasonality, visible through the sales-by-month chart.
+
+2. Customer Payment Behavior
+* Credit Card and Cash accounted for the majority of total revenue.
+* Digital Wallet usage was minimal, indicating customers prefer more traditional payment channels.
+* This suggests opportunities to explore or promote digital payment adoption.
+
+3. Category Performance
+
+* The Top Categories visualization shows clear dominance from:
+   * Butchers
+   * Electronics
+   * Beverages
+* These categories consistently contribute the highest revenue.
+* Lower-performing categories present potential areas for strategic improvement or reassessment.
+
+4. Item-Level Insights (Cleaned Dataset Only)
+* After removing rows with missing Item names, the Top Items chart accurately highlights the most in-demand products.
+* Some missing items had identical price values as known items, making them impossible to classify reliably—therefore excluded.
+* This ensured item-level insights were accurate and not influenced by ambiguous data.
+
+5. Discounts Behavior
+* Most transactions had no discounts applied.
+* Discounted sales formed only a small portion of total revenue.
+* The store relies primarily on regular-priced sales rather than promotional strategies.
+
+6. Transaction Activity
+* KPIs such as Total Revenue, Transaction Count, and Average Order Value (AOV) show stable business performance.
+* AOV indicates customers typically make purchases of moderate value per visit.
+* KPI metrics were calculated using the full dataset to maintain accuracy.
+
+7. Data Quality & Dual-Dataset Approach
+* Missing values in Item, Price, Quantity, and Total Spent required a dual-dataset strategy:
+   * Table1 (full dataset): used for KPIs, totals, and time-based analysis.
+   * Table1_1 (clean dataset): used for Top Items to ensure item-level accuracy.
+* This approach ensured insights remained reliable and not skewed by incomplete data.
+
+### Recommendations
+Based on the insights gathered from the sales dashboard, the following actions are recommended to improve business performance, optimize product strategy, and strengthen revenue outcomes:
+1. Strengthen High-Performing Categories
+Since Butchers, Electronics, and Food consistently contribute the highest revenue:
+* Increase inventory availability for these categories.
+* Allocate more shelf space and marketing efforts toward them.
+* Consider bundling strategies to increase average order value among top categories.
+
+2. Address Low-Performing Categories
+Categories contributing minimal revenue should be:
+* Reviewed for pricing issues, supply inconsistencies, or low customer interest.
+* Considered for redesign, promotional visibility, or potential discontinuation.
+This helps optimize operational focus and reduce inventory waste.
+
+3. Improve Digital Wallet Adoption
+Although Digital Wallet payments exist, their usage is significantly low:
+* Introduce incentives (e.g., small discounts or loyalty points) for digital payments.
+* Promote digital payment options more clearly in-store and online.
+* Train staff to encourage customers to try alternative payment methods.
+This diversification increases payment flexibility and customer convenience.
+
+4. Monitor Seasonal Sales Patterns
+Monthly sales fluctuations indicate possible seasonality:
+* Identify high-demand months and prepare stock/inventory accordingly.
+* Introduce promotions during historically low-sales months.
+* Consider targeted campaigns around peak seasons to maximize revenue.
+
+5. Improve Data Capture for Items & Discounts
+Missing data significantly impacted item-level analysis. To prevent this:
+* Ensure all items are correctly recorded at the point of sale.
+* Require mandatory fields for Price, Quantity, and Item.
+* Record discounts consistently (no blanks), even when no discount is applied.
+Better data quality = more accurate insights.
+
+6. Expand Discount Strategy (If Relevant)
+Since most transactions did not include discounts:
+* Analyze price sensitivity with controlled discount campaigns.
+* Test whether small targeted discounts increase volume without harming margins.
+* Track discount effectiveness over time before scaling.
+
+7. Continue Monitoring KPIs
+Key performance indicators such as Total Revenue, AOV, and Transaction Count should be:
+* Reviewed monthly to identify emerging patterns.
+* Compared year-over-year to track the effectiveness of changes.
+* Combined with inventory data to optimize stock management.
+
+8. Enhance Item-Level Promotion
+* Insights from the Top Items chart suggest clear high-demand products:
+* Prioritize these items in marketing banners, homepage highlights, and in-store placements.
+* Use them as anchor products during promotional events to draw more customers
+
+Dataset Source
+
+[Download Here](https://www.kaggle.com/datasets/ahmedmohamed2003/retail-store-sales-dirty-for-data-cleaning)
