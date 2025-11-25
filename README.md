@@ -1,6 +1,15 @@
 # Retail-Sales-Store-Analysis | Revenue, Trends and Insights
 Excel Project | Retail Sales Data | From Raw Data to Business Insights
 
+## Table Of Contents
+* [Project Overview](Project-Overview)
+* [Tools & Techniques Used](Tools--Techniques)
+* [Dataset Overview](Dataset-Overview)
+* [Data Cleaning Process](Data-Cleaning-Process)
+* [Exploratory Data Analysis](Exploratory-Data-Analysis)
+* [Excel Dashboard](Excel-Dashboard)
+* [Recommendations](Recommendations)
+
 ### Project Overview
 This project explores and analyzes sales data from a retail store to uncover key business insights. The main goal is to understand sales performance trends, identify top-performing products, and create a visually appealing Excel dashboard that summarizes these insights for decision-making.
 
@@ -8,7 +17,7 @@ Using Microsoft Excel, the dataset is cleaned and prepared to ensure accuracy an
 
 This project demonstrates my ability to clean, analyze, and visualize real-world sales data — showcasing practical skills in Excel functions, data visualization, and dashboard creation relevant to business analytics.
 
-### Tools & Techniques Used
+### Tools & Techniques
 Tools
 * Microsoft Excel
 * Power Query
@@ -65,7 +74,7 @@ Some columns contain missing data that will be handled during cleaning:
 * Total Spent – 604 missing
 * Discount Applied – 4,199 missing
 
-### Data cleaning
+### Data Cleaning Process
 
 * Imported the raw sales dataset into Excel for initial review.
 * Removed rows with missing Price Per Unit and Quantity, since these prevented accurate calculation of Total Spent.
