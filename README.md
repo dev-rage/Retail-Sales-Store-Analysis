@@ -2,13 +2,13 @@
 Excel Project | Retail Sales Data | From Raw Data to Business Insights
 
 ## Table Of Contents
-* [Project Overview](Project-Overview)
-* [Tools & Techniques Used](Tools--Techniques)
-* [Dataset Overview](Dataset-Overview)
-* [Data Cleaning Process](Data-Cleaning-Process)
-* [Exploratory Data Analysis](Exploratory-Data-Analysis)
-* [Excel Dashboard](Excel-Dashboard)
-* [Recommendations](Recommendations)
+* [Project Overview](#project-overview)
+* [Tools & Techniques Used](#tools--techniques)
+* [Dataset Overview](#dataset-overview)
+* [Data Cleaning Process](#data-cleaning-process)
+* [Exploratory Data Analysis](#exploratory-data-analysis)
+* [Excel Dashboard](#excel-dashboard)
+* [Recommendations](#recommendations)
 
 ### Project Overview
 This project explores and analyzes sales data from a retail store to uncover key business insights. The main goal is to understand sales performance trends, identify top-performing products, and create a visually appealing Excel dashboard that summarizes these insights for decision-making.
